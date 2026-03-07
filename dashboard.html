@@ -24,6 +24,15 @@
     </div>
   </nav>
 
+  <!-- Tabs -->
+   <div class="bg-white px-4 py-2 rounded shadow mt-4  mx-30 ">
+  <div class="flex gap-4 mt-4 px-4">
+    <button id="AllBtn" class="tab-btn px-3 py-1 bg-blue-500 text-white rounded" onclick="filterIssues('All')">All</button>
+    <button id="OpenBtn" class="tab-btn px-3 py-1 bg-gray-200 text-gray-700 rounded" onclick="filterIssues('Open')">Open</button>
+    <button id="ClosedBtn" class="tab-btn px-3 py-1 bg-gray-200 text-gray-700 rounded" onclick="filterIssues('Closed')">Closed</button>
+  </div>
+  </div>
+
   <script src="dashboard.js"> </script>
 </body>
 </html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GitHub Issues Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center p-4 bg-white shadow-md">
+    <div class="flex items-center gap-2">
+      <img src="assets/github-logo.png" class="w-8">
+      <span class="font-bold text-lg"> GitHub Issues Tracker</span>
+    </div>
+
+    <div class="relative w-full max-w-xs flex  items-center gap-2">
+          <i class="fas fa-search absolute left-3  top-1/2 transform -translate-y-1/2 text-gray-400"> </i>
+      <input id="searchInput" type="text"  placeholder="Search issues..." class="border  p-2 pl-10  rounded">
+       
+      <button onclick="searchIssues()" class="bg-[#4A00FF] text-white min-w-[120px]  px-4 py-2  rounded hover:bg-[#3a00cc]"> + New Issue </button>
+    </div>
+  </nav>
+
+  <script src="dashboard.js"> </script>
+</body>
+</html>
